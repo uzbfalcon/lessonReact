@@ -2,7 +2,7 @@ import React, { useState, useReducer } from 'react';
 
 export const Hooks = (props) => {
   const [count, setCount] = useState(0);
-  const [option, setOption] = useState(1);
+  const [option, setOption] = useState('plus');
 
 
   const reducer = (state, action) => {
@@ -39,7 +39,7 @@ export const Hooks = (props) => {
         <option value={30}>30</option>
         <option value={40}>40</option>
       </select>
-      <button onClick={() => dispatch({ type: 'byamout', payload: option })} style={{ margin: '5px' }}>plus</button>
+      <button onClick={() => dispatch({ type: 'byamout', payload: option })} style={{ margin: '5px' }}>{option}</button>
 
     </div>
   );
