@@ -6,13 +6,13 @@ export const Navbar = () => {
       
     <Container>
 
-      <Item activeStyle={{ color: "red", fontSize: "26px" }} to={"/home"}>Home</Item>
+      <Item  to={"/home"}>Home</Item>
 
-      <Item activeStyle={{ color: "red", fontSize: "26px" }} to={"/elements"}>Elements</Item>
+      <Item  to={"/elements"}>Elements</Item>
 
-      <Item activeStyle={{ color: "red", fontSize: "26px" }} to={"/pages"}>Pages</Item>
+      <Item  to={"/pages"}>Pages</Item>
 
-      <Item activeStyle={{ color: "red", fontSize: "26px" }} to={"/templates"}>Templates</Item>
+      <Item  to={"/templates"}>Templates</Item>
 
     </Container>
   )

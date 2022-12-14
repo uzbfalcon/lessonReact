@@ -10,6 +10,14 @@ const Container = styled.div`
     height: 55px;
     color: white;
     align-items: center;
+    border-radius: 15px;
+    .active {
+        color: red;
+        font-size: 25px;
+    }
+    .hover {
+        box-shadow: 2px 2px 15px red;
+    }
 `;
 
 
