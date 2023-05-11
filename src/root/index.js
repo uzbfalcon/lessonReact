@@ -2,25 +2,31 @@ import React from 'react';
 import { Navbar } from '../component/Navbar';
 import { Container } from '../component/Navbar/style';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Elements } from '../component/Elements';
+import { Login } from '../component/Elements';
 import { Pages } from '../component/Pages';
 import { Home } from '../component/Home';
 import { Templates } from '../component/Templates';
+import Counter from '../component/Counter';
+import API from '../component/Apitutorial';
 
 
 export const Root = () => {
   return (
     <BrowserRouter>
-      <Container>
+    {/* <Counter/> */}
+    <API/>
+      {/* <Container>
         <Navbar />
       </Container>
-      <Routes path={"/home"} element={Home}/>
-      <Routes path={"/pages"} element={Pages}/>
-      <Routes path={"/templates"} element={Templates}/>
-      <Routes path={"/Elements"} element={Elements}/>
-      <Routes path="/">
-      <Route to={"/home"}/>
-      </Routes>
+      <Routes>
+
+        <Route path={"/home"} element={<Home />} />
+        <Route path={"/pages"} element={<Pages />} />
+        <Route path={"/templates"} element={<Templates />} />
+        <Route path={"/Login"} element={<Login />} />
+        <Route path="/">
+          <Route to={"/home"} /></Route>
+      </Routes> */}
     </BrowserRouter>
   )
 }

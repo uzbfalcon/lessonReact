@@ -1,7 +1,10 @@
 import React from 'react'
 
-export const Elements = () => {
+export const Login = () => {
   return (
-    <h1>Hello Elements</h1>
-  )
+    <div >
+      <input type="text"  placeholder='Name' />
+      <input type="number"  placeholder='Number' />
+      <input type="email"  placeholder='Email' />
+    </div>  )
 }

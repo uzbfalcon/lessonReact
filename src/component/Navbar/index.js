@@ -1,18 +1,20 @@
 import React from 'react'
-import { Container, Item } from './style'
+import { NavLink } from 'react-router-dom'
+import { Container } from './style'
 
 export const Navbar = () => {
   return (
-      
+
     <Container>
 
-      <Item  to={"/home"}>Home</Item>
+      <NavLink to={"/home"}>Home</NavLink>
 
-      <Item  to={"/elements"}>Elements</Item>
+      <NavLink to={"/templates"}>Templates</NavLink>
 
-      <Item  to={"/pages"}>Pages</Item>
+      <NavLink to={"/pages"}>Pages</NavLink>
 
-      <Item  to={"/templates"}>Templates</Item>
+      <NavLink to={"/elements"}>Login</NavLink>
+
 
     </Container>
   )
