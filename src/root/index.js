@@ -8,17 +8,22 @@ import { Home } from '../component/Home';
 import { Templates } from '../component/Templates';
 import Counter from '../component/Counter';
 import API from '../component/Apitutorial';
+import NetSpeed from '../component/Net_speed';
+import Student from '../component/Inputs';
 
 
 export const Root = () => {
   return (
     <BrowserRouter>
     {/* <Counter/> */}
-    <API/>
+    {/* <API/> */}
+    {/* <Student/> */}
+    <NetSpeed/>
       {/* <Container>
         <Navbar />
       </Container>
       <Routes>
+      
 
         <Route path={"/home"} element={<Home />} />
         <Route path={"/pages"} element={<Pages />} />
